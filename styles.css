@@ -21,30 +21,24 @@ body {
     transform-style: preserve-3d;
     /* transform: rotateX(-30deg) rotateY(30deg); */
 }
+
 .face {
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-https://www.svgrepo.com/show/345223/three-dots-vertical.svgcolor: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .line {
-    position: absolute;
+	top:0;
     width: 100%;
-    height: 33.33%;
-    border-bottom: 1px solid black;
+   height: calc(100% / 3); /* Avoids floating point issues */
+    min-height: 66px;
+	border: 1px solid black;
 }
 
-.line-1 {
-    top: 0;
-}
-
-.line-2 {
-    top: calc(100% / 3);
-}
-
-.line-3 {
-    top: calc(100% * 2 / 3);
-}
 
