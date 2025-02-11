@@ -36,7 +36,8 @@ body {
 .line {
 	top:0;
     width: 100%;
-    height: 222.44444274902344px;
+   height: calc(100% / 3); /* Avoids floating point issues */
+    min-height: 66px;
 	border: 1px solid black;
 }
 
